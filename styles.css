@@ -1,11 +1,61 @@
-body {
-    margin: 5%;
+/* Colour palette: RGB (240, 233, 210) (230, 221, 196) (103, 137, 131) (24, 29, 49) */
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(24, 29, 49);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+.nav-li {
+    float: left;
 }
 
+.nav-a {
+    display: block;
+    padding: 20px;
+    color:rgb(240, 233, 210);
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-a:hover {
+    background-color: rgb(103, 137, 131)
+}
+
+.nav-a:active {
+    background-color: rgb(103, 137, 131)
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 5%;
+}
 section {
     padding: 5%;
 }
 
 .a {
-    background: blanchedalmond;
+    background: rgb(240, 233, 210);
+}
+
+a {
+    color: rgb(103, 137, 131);
+}
+
+h1, h2 {
+    font-family: 'Pacifico', cursive;
+    color: rgb(24, 29, 49);
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
 }
