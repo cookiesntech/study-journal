@@ -2,6 +2,7 @@
 
 .nav {
     list-style-type: none;
+    
     margin: 0;
     padding: 0;
     background-color:rgb(24, 29, 49);
@@ -33,7 +34,11 @@
 
 body {
     font-family: 'Roboto Mono', monospace;
-    margin: 5%;
+    margin: 100px 5%;
+}
+
+.disclaimer {
+    color: rgb(230, 221, 196);
 }
 section {
     padding: 5%;
