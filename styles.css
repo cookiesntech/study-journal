@@ -2,7 +2,6 @@
 
 .nav {
     list-style-type: none;
-    
     margin: 0;
     padding: 0;
     background-color:rgb(24, 29, 49);
@@ -18,7 +17,7 @@
 
 .nav-a {
     display: block;
-    padding: 20px;
+    padding: 15px;
     color:rgb(240, 233, 210);
     text-decoration: none;
     text-align: center;
@@ -34,18 +33,38 @@
 
 body {
     font-family: 'Roboto Mono', monospace;
-    margin: 100px 5%;
+    margin: 75px 5%;
 }
 
 .disclaimer {
     color: rgb(230, 221, 196);
+    padding: 1%;
+    margin: 0 20% 0 0;
+}
+
+aside {
+    height: 90%;
+    width: 15%;
+    display: inline-block;
+    position: fixed;
+    top: 10%;
+    right: 2%;
+    padding: 10% 2%;
+    text-align: center;
+    font-size: 12px;
+    background:rgba(103, 137, 131, 0.5)
 }
 section {
-    padding: 5%;
+    padding: 3% 5%;
+    margin: 2% 20% 2% 0;
 }
 
 .a {
     background: rgb(240, 233, 210);
+}
+
+.b {
+    background: rgba(240, 233, 210, 0.25);
 }
 
 a {
