@@ -1,30 +1,30 @@
 /* Colour palette: RGB (240, 233, 210) (230, 221, 196) (103, 137, 131) (24, 29, 49) */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color:rgb(24, 29, 49);
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-  }
-
-.nav-li {
-    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .nav-a {
-    display: block;
-    padding: 15px;
     color:rgb(240, 233, 210);
     text-decoration: none;
     text-align: center;
 }
 
-.nav-a:hover {
-    background-color: rgb(103, 137, 131)
+.nav-li:hover {
+    background-color: rgb(83, 90, 89)
 }
 
 .nav-a:active {
@@ -33,13 +33,11 @@
 
 body {
     font-family: 'Roboto Mono', monospace;
-    margin: 75px 5%;
 }
 
 .disclaimer {
     color: rgb(230, 221, 196);
-    padding: 1%;
-    margin: 0 20% 0 0;
+    margin: 2.5% 25% 2.5% 10%;
 }
 
 aside {
@@ -47,16 +45,24 @@ aside {
     width: 15%;
     display: inline-block;
     position: fixed;
-    top: 10%;
-    right: 2%;
-    padding: 10% 2%;
+    top: 12%;
+    right: 5%;
+    padding: 0 2%;
     text-align: center;
     font-size: 12px;
     background:rgba(103, 137, 131, 0.5)
 }
+
+.aside-h2 {
+    line-height: 1;
+}
+
+.aside-p {
+    padding: 5% 0;
+}
 section {
     padding: 3% 5%;
-    margin: 2% 20% 2% 0;
+    margin: 2.5% 25% 2.5% 10%;
 }
 
 .a {
@@ -74,16 +80,24 @@ a {
 h1, h2 {
     font-family: 'Pacifico', cursive;
     color: rgb(24, 29, 49);
-}
-
-h1 {
-    font-size: 48px;
-}
-
-h2 {
     font-size: 32px;
 }
 
 .strikeThrough {
     text-decoration: line-through;
+}
+
+p {
+    line-height: 1.6;
+    padding: 2% 0;
+}
+
+hr {
+    border-top: 7px dotted rgb(24, 29, 49);
+    width: 30px;
+    
+}
+
+img {
+    padding: 5% 0;
 }
