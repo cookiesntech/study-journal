@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    font-size: 62.5%;
+}
 
 .nav {
     list-style-type: none;
@@ -13,9 +16,11 @@
     background-color:rgb(24, 29, 49);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 10px;
     padding: 20px;
+    font-size: 2rem;
 }
 
 .nav-a {
@@ -25,11 +30,7 @@
 }
 
 .nav-li:hover {
-    background-color: rgb(83, 90, 89)
-}
-
-.nav-a:active {
-    background-color: rgb(103, 137, 131)
+    background-color: rgb(103, 137, 131);
 }
 
 body {
@@ -48,9 +49,9 @@ aside {
     position: fixed;
     top: 12%;
     right: 5%;
-    padding: 0 2%;
+    padding: 2%;
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2rem;
     background:rgba(103, 137, 131, 0.5)
 }
 
@@ -61,9 +62,10 @@ aside {
 .aside-p {
     padding: 5% 0;
 }
-section {
+section, article {
     padding: 3% 5%;
     margin: 2.5% 25% 2.5% 10%;
+    font-size: 1.6rem;
 }
 
 .a {
@@ -81,7 +83,7 @@ a {
 h1, h2 {
     font-family: 'Pacifico', cursive;
     color: rgb(24, 29, 49);
-    font-size: 32px;
+    font-size: 3rem;
 }
 
 .strikeThrough {
@@ -99,6 +101,7 @@ hr {
     
 }
 
-img {
-    padding: 5% 0;
+img, video {
+    width: 95%;
+    padding: 5%;
 }
