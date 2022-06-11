@@ -9,6 +9,10 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
 .nav {
     list-style-type: none;
     margin: 0;
@@ -18,28 +22,34 @@ html {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 10px;
-    padding: 20px;
+    gap: 1rem;
+    padding: 2rem;
     font-size: 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .nav-a {
     color:rgb(240, 233, 210);
     text-decoration: none;
     text-align: center;
+    padding: 2rem;
 }
 
-.nav-li:hover {
+.nav-a:hover,
+.nav-a.active {
     background-color: rgb(103, 137, 131);
+    text-decoration: underline;
 }
 
-body {
-    font-family: 'Roboto Mono', monospace;
+main {
+    margin-top: 8rem;
 }
 
 .disclaimer {
     color: rgb(230, 221, 196);
-    margin: 2.5% 25% 2.5% 10%;
+    margin: 2.5% 25% 0 10%;
     font-size: 1.6rem;
 }
 
@@ -62,9 +72,9 @@ aside {
 }
 
 .aside-p {
-    /* padding: 5% 0; */
     width: 95%;
 }
+
 section, article {
     padding: 3% 5%;
     margin: 2.5% 25% 2.5% 10%;
@@ -114,7 +124,19 @@ img, video {
     width: 45px;
 }
 
-@media only screen and (max-width: 768px) {
+.hidden {
+    display: none;
+}
+
+.notHidden {
+    display: block;
+}
+
+footer {
+    background-color:rgb(24, 29, 49);
+}
+
+@media screen and (max-width: 768px) {
     aside {
         display: none;
     }

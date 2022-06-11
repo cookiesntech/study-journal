@@ -6,9 +6,11 @@
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <script src="main.js"></script>
     </head>
 
     <body>
+    <header>
         <nav>
             <ul class="nav">
                 <li class="nav-li"><a class="nav-a" href="index.html">Journal</a></li>
@@ -18,7 +20,9 @@
                 <li class="nav-li"><a class="nav-a" href="steps.html">Step By Step</a></li>
             </ul>
         </nav>
+    </header>
 
+    <main>
         <aside>
             <img src="media/round-me-dark.png" alt="profile photo">
             <h2 class="aside-h2">Hi, I'm Marina.</h2>
@@ -32,8 +36,9 @@
 
         <p class="disclaimer">I'll update this <span class="strikeThrough">tomorrow</span> soon, I have a list somewhere that will make it easy.</p>
         
-        <section class="a">
+        <section class="a" onclick="toggleDivs()">
             <h1>Courses</h1>
+            <div class="hidden">
             <ul>
                 <li><a href="https://cs50.harvard.edu/x/2022/" target="_blank">CS50x</a> <p>Harvard's introduction to computer science, the course I started with; explains the basic CS concepts in easy to understand terms; 2.5h long video lectures, some short videos, good notes and a very challenging homework section where you get to put things into practice, mostly in C and Python</p></li>
                 <li><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>
@@ -43,6 +48,7 @@
                 <li><a href ="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank">Angela Yu's Complete WebDev Bootcamp</a>
                     <p>The only course I've paid for so far; haven't used it much, so I'll write more about it when I do</p></li>
             </ul>
+            </div>
         </section>
 
         <section class="b">
@@ -67,6 +73,9 @@
                 <li><a href="https://colorhunt.co/" target="_blank">Color Hunt</a> - Colour palettes</li>
             </ul>
         </section>
-        
+    </main>
+    <footer>
+        <p class="disclaimer">This is a footer, mostly because there usually is one. Maybe I use it for something later, maybe I don't.</p>
+    </footer>
     </body>
 </html>

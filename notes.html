@@ -6,9 +6,11 @@
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <script src="main.js"></script>
     </head>
 
     <body>
+    <header>
         <nav>
             <ul class="nav">
                 <li class="nav-li"><a class="nav-a" href="index.html">Journal</a></li>
@@ -18,6 +20,9 @@
                 <li class="nav-li"><a class="nav-a" href="steps.html">Step By Step</a></li>
             </ul>
         </nav>
+    </header>
+
+    <main>
 
         <p class="disclaimer">This page will take awhile, forget about it for now :D</p>
 
@@ -32,12 +37,9 @@
             <a href="https://twitter.com/cookiesntech" target="_blank"><img src="media/icon-twitter.png" alt="twitter logo" class="icon"></a>
         </aside>
 
-        <section class="a">
-            <h1>Computer Science</h1>
-        </section>
-        
-        <section class="b">
+        <section class="b" onclick="toggleDivs()">
             <h1>HTML</h1>
+            <div class="hidden">
             <p>HyperText Markup Language - the one the web browser reads documents in to display their content.</p>
             <p>
             <p>Its purpose is to give that content <em>structure</em>.</p>
@@ -48,13 +50,15 @@
             <p>It's divided into two main elements - the <strong>&lt;head&gt;</strong> and the <strong>&lt;body&gt;</strong>.</p>
             <p>In the <strong>&lt;head&gt;</strong> we include all information for the browser itself; it remains invisible to the user (with its <strong></strong>&lt;title&gt; being the one notable exception).</p>
             <p>The <strong>&lt;body&gt;</strong> on the other hand contains everything that the user will see.</p>
-            <p></p>
+            </div>
         </section>
 
-        <section class="a">
+        <section class="a" onclick="toggleDivs()">
             <h1>CSS</h1>
+            <div class="hidden">
             <p>Cascading Style Sheets - the one responsible for the presentation of a document's content.</p>
             <p>Its purpose is to give that content <em>style</em>.</p>
+            </div>
         </section>
 
         <section class="b">
@@ -62,15 +66,15 @@
         </section>
 
         <section class="a">
-            <h1>SQL</h1>
+            <h1>Computer Science</h1>
         </section>
 
         <section class="b">
-            <h1>Python</h1>
+            <h1>SQL</h1>
         </section>
 
         <section class="a">
-            <h1>C</h1>
+            <h1>Python</h1>
         </section>
 
         <section class="b">
@@ -80,6 +84,9 @@
         <section class="a">
             <h1>Productivity</h1>
         </section>
-
+    </main>
+    <footer>
+        <p class="disclaimer">This is a footer, mostly because there usually is one. Maybe I use it for something later, maybe I don't.</p>
+    </footer>
     </body>
 </html>
