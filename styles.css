@@ -37,8 +37,7 @@ body {
     padding: 2rem;
 }
 
-.nav-a:hover,
-.nav-a.active {
+.nav-a:hover {
     background-color: rgb(103, 137, 131);
     text-decoration: underline;
 }
@@ -124,19 +123,20 @@ img, video {
     width: 45px;
 }
 
-.hidden {
-    display: none;
+details > summary {
+    list-style: none;
+    cursor: pointer;
 }
 
-.notHidden {
-    display: block;
+summary:hover {
+    text-decoration: underline;
 }
 
 footer {
     background-color:rgb(24, 29, 49);
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     aside {
         display: none;
     }
@@ -147,3 +147,15 @@ footer {
         font-size: 1.2rem;
     }
 }
+
+@media only screen and (max-device-width: 768px) {
+    aside {
+        display: none;
+    }
+    section, article {
+        margin: 2.5% 5%;
+    }
+    .disclaimer {
+        font-size: 1.2rem;
+    }
+} 
